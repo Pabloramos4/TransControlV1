@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.625, 15.625" name="TransControl">
+  <DataContextMoniker Name="/TransControlDataContext" />
+  <nestedChildShapes>
+    <classShape Id="07001839-8acd-43ad-b548-db1d0f8abb78" isExpanded="false" absoluteBounds="7.25, 2, 2, 0.45">
+      <DataClassMoniker Name="/TransControlDataContext/USUARIOS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6359da03-aef8-49f0-baea-9f4742c5c877" absoluteBounds="7.2650000000000006, 2.46, 1.9700000000000002, 18.1334228515625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ecc38114-dbcc-457a-81b4-ea0a1e391c93" absoluteBounds="6.5, 0.625, 2, 4.6554182942708326">
+      <DataClassMoniker Name="/TransControlDataContext/Vehiculos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="167ce764-b122-413f-84ed-747b58e44c56" absoluteBounds="6.515, 1.085, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e3d5425a-159f-40a6-b8f4-492b835541ab" isExpanded="false" absoluteBounds="0.75, 5.375, 2, 0.45">
+      <DataClassMoniker Name="/TransControlDataContext/Clientes" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d62364ab-aa9e-4072-8c3e-fd1b89b2211e" absoluteBounds="0.76499999999999968, 5.835, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6d27b61a-b6e2-4715-89db-5c94af0fb4d7" absoluteBounds="4.375, 1.75, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/TransControlDataContext/VehiculosTipos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8c9df7bd-fd3b-456a-a137-56a06c7cb46b" absoluteBounds="4.39, 2.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.5 : 2.59100315708505); (6.375 : 2.59100315708505)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TransControlDataContext/Vehiculos/Vehiculos_VehiculosTipos" />
+      <nodes>
+        <classShapeMoniker Id="ecc38114-dbcc-457a-81b4-ea0a1e391c93" />
+        <classShapeMoniker Id="6d27b61a-b6e2-4715-89db-5c94af0fb4d7" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="e7476304-d8d9-430f-a4af-d849de2a0859" absoluteBounds="0.875, 2.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/TransControlDataContext/Sucursales" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ac4de913-c871-4d99-94be-1b04946e9758" absoluteBounds="0.88999999999999968, 2.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.5 : 3.34699625651042); (2.875 : 3.34699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TransControlDataContext/Vehiculos/Vehiculos_Sucursales" />
+      <nodes>
+        <classShapeMoniker Id="ecc38114-dbcc-457a-81b4-ea0a1e391c93" />
+        <classShapeMoniker Id="e7476304-d8d9-430f-a4af-d849de2a0859" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="78afb445-d809-4f71-bad2-93e8f822a2d0" absoluteBounds="3.375, 3.75, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/TransControlDataContext/Gastos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="924f89a5-aa3c-40be-aec3-6a80324f3957" absoluteBounds="3.39, 4.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="aa111978-d26e-4e5d-9f1d-2e8f159b2cac" absoluteBounds="6.375, 3.75, 2, 1.193992513020834">
+      <DataClassMoniker Name="/TransControlDataContext/GastosTipos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e242f476-4a2c-443a-8c16-2e9cae8d0cc2" absoluteBounds="6.39, 4.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.375 : 4.34699625651042); (6.375 : 4.34699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TransControlDataContext/Gastos/Gastos_GastosTipos" />
+      <nodes>
+        <classShapeMoniker Id="78afb445-d809-4f71-bad2-93e8f822a2d0" />
+        <classShapeMoniker Id="aa111978-d26e-4e5d-9f1d-2e8f159b2cac" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="0c5ab4de-c886-40d1-ad2e-937ced75b99a" absoluteBounds="6.125, 5.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/TransControlDataContext/Localizaciones" />
+      <nestedChildShapes>
+        <elementListCompartment Id="51718756-8212-43f3-ba73-4cae47df0cc2" absoluteBounds="6.14, 6.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="342a426d-aa1c-4b0f-b449-c3f8f0de9ca0" absoluteBounds="9.375, 3, 2, 1.9631982421874996">
+      <DataClassMoniker Name="/TransControlDataContext/VehiculosMatricesTraslados" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c5e3c096-548a-469f-9267-a9281fa60c68" absoluteBounds="9.39, 3.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.5 : 3.98159912109375); (9.375 : 3.98159912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TransControlDataContext/Vehiculos/Vehiculos_VehiculosMatricesTraslados" />
+      <nodes>
+        <classShapeMoniker Id="ecc38114-dbcc-457a-81b4-ea0a1e391c93" />
+        <classShapeMoniker Id="342a426d-aa1c-4b0f-b449-c3f8f0de9ca0" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="5632cf55-f141-4c5f-a94e-acb4afa9b113" absoluteBounds="9.375, 5.25, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/TransControlDataContext/vista_VhMatrizLocalizaciones" />
+      <nestedChildShapes>
+        <elementListCompartment Id="486fdaa9-2d09-40cb-9ba4-b0b9d1264c5a" absoluteBounds="9.39, 5.71, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6f2d58d2-20b8-49a1-b81e-297b4474546c" absoluteBounds="3.5, 6.625, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/TransControlDataContext/Parametros" />
+      <nestedChildShapes>
+        <elementListCompartment Id="73840b6a-84e9-4efb-9a54-609fbb43417f" absoluteBounds="3.5149999999999997, 7.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9a322d83-dc36-43c3-87c6-60bbfa820b9c" absoluteBounds="0.75, 8.75, 2, 6.5784326171875005">
+      <DataClassMoniker Name="/TransControlDataContext/Vendoc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="332a9803-4204-4bf0-a025-8c8e786c0347" absoluteBounds="0.765, 9.21, 1.9700000000000002, 6.0184326171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a6ef59f8-fe4f-4ec0-8d22-aacc84116331" absoluteBounds="3.75, 8.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/TransControlDataContext/VendocDetalles" />
+      <nestedChildShapes>
+        <elementListCompartment Id="18f5d214-d9d9-4b7f-9105-4daf8b2d19b1" absoluteBounds="3.765, 9.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9d87ce5c-b5b8-4331-815e-0789c675d1b0" absoluteBounds="6.75, 8.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/TransControlDataContext/VendocExpedientes" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5541abe4-e13b-4a08-a4ea-ccccfceba0cc" absoluteBounds="6.765, 9.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 10.1162019856771); (3.41666666666667 : 10.1162019856771 : JumpStart); (3.58333333333333 : 10.1162019856771 : JumpEnd); (3.75 : 10.1162019856771)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TransControlDataContext/Vendoc/Vendoc_VendocDetalles" />
+      <nodes>
+        <classShapeMoniker Id="9a322d83-dc36-43c3-87c6-60bbfa820b9c" />
+        <classShapeMoniker Id="a6ef59f8-fe4f-4ec0-8d22-aacc84116331" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 11.7412019856771); (6.08853916666667 : 11.7412019856771 : JumpStart); (6.36458333333333 : 11.7412019856771 : JumpEnd); (7.21875 : 11.7412019856771); (7.21875 : 10.3285953776042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TransControlDataContext/Vendoc/Vendoc_VendocExpedientes" />
+      <nodes>
+        <classShapeMoniker Id="9a322d83-dc36-43c3-87c6-60bbfa820b9c" />
+        <classShapeMoniker Id="9d87ce5c-b5b8-4331-815e-0789c675d1b0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.5 : 5.28041829427083); (7.5 : 5.5); (5.75 : 5.5); (5.75 : 8.64589680989583); (3.5 : 8.64589680989583); (3.5 : 10.2143489928385); (2.75 : 10.2143489928385)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TransControlDataContext/Vehiculos/Vehiculos_Vendoc" />
+      <nodes>
+        <classShapeMoniker Id="ecc38114-dbcc-457a-81b4-ea0a1e391c93" />
+        <classShapeMoniker Id="9a322d83-dc36-43c3-87c6-60bbfa820b9c" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="7cf4cfef-cc2d-43b4-9792-1c3bec9a8d55" isExpanded="false" absoluteBounds="6.5, 7.625, 2, 0.45">
+      <DataClassMoniker Name="/TransControlDataContext/VehiculosKmRentasLog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a942f1f0-d135-4d6f-a2b9-35a832692602" absoluteBounds="6.515, 8.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="325c8e61-f3b4-44d2-b4e5-b508d8b6b7c3" absoluteBounds="3.875, 12.25, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/TransControlDataContext/Operadores" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1686b94b-9051-498c-ba65-b6acbd9e1356" absoluteBounds="3.8899999999999997, 12.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.875 : 12.8469962565104); (2.75 : 12.8469962565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TransControlDataContext/Operadores/Operadores_Vendoc" />
+      <nodes>
+        <classShapeMoniker Id="325c8e61-f3b4-44d2-b4e5-b508d8b6b7c3" />
+        <classShapeMoniker Id="9a322d83-dc36-43c3-87c6-60bbfa820b9c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.3125 : 5.825); (2.3125 : 8.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TransControlDataContext/Clientes/Clientes_Vendoc" />
+      <nodes>
+        <classShapeMoniker Id="e3d5425a-159f-40a6-b8f4-492b835541ab" />
+        <classShapeMoniker Id="9a322d83-dc36-43c3-87c6-60bbfa820b9c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.28125 : 7.1362939453125); (6.28125 : 14.4174625651042); (2.75 : 14.4174625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TransControlDataContext/Localizaciones/Localizaciones_Vendoc" />
+      <nodes>
+        <classShapeMoniker Id="0c5ab4de-c886-40d1-ad2e-937ced75b99a" />
+        <classShapeMoniker Id="9a322d83-dc36-43c3-87c6-60bbfa820b9c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.1718725 : 7.1362939453125); (6.1718725 : 13.9307250390625); (2.75 : 13.9307250390625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TransControlDataContext/Localizaciones/Localizaciones_Vendoc1" />
+      <nodes>
+        <classShapeMoniker Id="0c5ab4de-c886-40d1-ad2e-937ced75b99a" />
+        <classShapeMoniker Id="9a322d83-dc36-43c3-87c6-60bbfa820b9c" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

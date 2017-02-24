@@ -1,0 +1,104 @@
+﻿.azblock
+{
+    display:block;
+    float: right;
+    margin-top: 17px;
+    margin-right: 25px;
+    font-size: 16px;
+	width:auto;
+}
+
+.aztitulo1
+{
+	line-height:50px;
+    display:table-cell;
+    margin-top:auto;
+    margin-bottom:auto;
+    
+    font-size: 20px;
+	font-family: 'Segoe UI', Helvetica, 'Droid Sans', Tahoma, Geneva, sans-serif;
+	text-align:center;
+    vertical-align:middle;
+    color:gray;
+    
+}
+
+.aztitulo2
+	{
+		font-size: 14px;
+        font-family: 'Segoe UI', Helvetica, 'Droid Sans', Tahoma, Geneva, sans-serif;
+        color:gray;
+	
+	}
+
+.logo {
+   
+    content:url("/Imagenes/transcontrol.jpg");
+   
+}
+
+#logomain {
+         display:block;
+         width:224px;
+        height:55px;
+    }
+
+#logologin {
+        display:block;
+        width:300px;
+        height:80px;
+        margin-left:auto;
+        margin-right:auto;
+ }
+
+#container {
+    background-color:aqua;
+
+}
+
+.izquierda {
+    float:left;
+    width: 33%;
+    height:100%;
+}
+
+#contenedorlogin {
+    text-align:center;
+    width:400px;
+    margin-left:auto;
+    margin-right:auto;
+   border:2px solid #e7e7e7;
+    margin-top:50px;
+    border-radius:4px;
+    background-color:white;
+    height:100%;
+    
+}
+
+.mybody {
+    background-color:#009FCF;
+    height:100%;
+}
+
+.myfooter {
+    display:block;
+    bottom: 30px;
+    height:20px;
+    position:absolute;
+    color:white;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+  width:99%;
+  font-size:11px;
+   
+
+   
+
+}
+
+#contenedorprincipal {
+    width:100%;
+    text-align:center;
+    
+}

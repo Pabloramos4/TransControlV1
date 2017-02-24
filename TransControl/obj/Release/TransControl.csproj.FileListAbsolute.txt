@@ -1,0 +1,16 @@
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\bin\TransControl.dll
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\bin\TransControl.pdb
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\bin\Alpha.Db.SQLGeneratorPlus.dll
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\bin\Infovision.Security.Permissions.dll
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\bin\System.Linq.Dynamic.dll
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\bin\FluentValidationNA.dll
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\bin\System.Linq.Dynamic.xml
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\bin\FluentValidationNA.xml
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\obj\Release\TransControl.csprojResolveAssemblyReference.cache
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\obj\Release\TransControl.Reportes.repMaster.resources
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\obj\Release\TransControl.Reportes.repRentacotizacion.resources
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\obj\Release\TransControl.Reportes.repRentas.resources
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\obj\Release\TransControl.csproj.GenerateResource.Cache
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\obj\Release\TransControl.dll.licenses
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\obj\Release\TransControl.dll
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\obj\Release\TransControl.pdb

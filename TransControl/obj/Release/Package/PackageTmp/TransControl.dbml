@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TransControl" Class="TransControlDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=(local);Initial Catalog=TransControl;Integrated Security=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="TransControlConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.USUARIOS" Member="USUARIOS">
+    <Type Name="USUARIOS">
+      <Column Name="ID_USUARIO" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PASSWORD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NIVEL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IK" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GRUPO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ADMIN" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CPZ" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="MOL" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ESC" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="MODULO" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="FULLNAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STATUS" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="FECHA_ULT_ACCESO" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="REGISTRO_ULT_ACCESO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FECHA_ALTA" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="CAMBIARPASSWORD" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="REGISTRO_CAMBIOPASSWORD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ID_SUCURSAL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CAMBIAR_SUC" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="RECIBIR_PAGOS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CANCELAR_PAGOS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CANCELAR_VENTA" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ELIMINAR_CLIENTE" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ELIMINAR_GASTO" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="REPORTES" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="GENERAR_VENTAS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PAGAR_TODO" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ADMIN_VEHICULOS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ADMIN_PAGOS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ADMIN_GASTOS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="REP_INVENTARIO" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="REP_CLIENTESVENCIDOS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="REP_GASTOSPORUNIDAD" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="REP_GASTOSPORFECHA" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="REP_GASTOSSINCOMPROBAR" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="REP_LISTAPRECIOS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="REP_LISTACLIENTESACTIVOS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="REP_INGRESOSPORFECHA" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="REP_VEHICULOSVENDIDOS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="REP_UTILIDADES" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="REP_INTERESESNOCOBRADOS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="REP_ENTRADASYSALIDAS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="REP_CANCELAPAGOS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="REP_CANCELAVENTAS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="REP_REPPAGOS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="MOD_GAS_KM" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ADMIN_CLIENTES" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ADMIN_COMPRAS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ADMIN_VENTAS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ADMIN_EGRESOS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ADMIN_PROD_GRALES" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ADMIN_ADMON" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ADMIN_CONFIG" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ADMIN_HERRAMIENTAS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="VH_CAMBIO_KM" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="VH_VALIDA_SECCIONES" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="VH_VALIDA_FACT" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="VH_TRASLADO_DOCTOS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="VH_CARGA_DOCTOS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="VH_ELIMINA_CARGAS_DOCTOS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="VH_ACUSE_DOCTOS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="VH_CAMBIA_KM_GASOLINA" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="VH_GASTOS_TOPES" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="VH_GASTOS_EDIT_GASTO_PREDEFINIDO" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="VH_MODIF_CATALOGOS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="VH_REPORTES" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CL_VER_DETALLE_VTAS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CL_CAMBIA_SUC_CLIENTE" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CL_VALIDA_DATOS_GRALES" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CL_VER_HISTORIAL_AVAL_CLIENTE" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CL_MODIF_DATOS_CONTROL" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CL_MODIF_CATALOGOS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CL_REPORTES" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CMP_REPORTES" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="EGR_VER_CATALOGO" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="EGR_VER_ADMON_VALES" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="EGR_VER_TRASPASO_CUENTAS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="EGR_MODIF_CATALOGO" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="EGR_REPORTES" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ADMIN_INGRESOS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="VH_INGRESA_ASIG_PRECIO" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="VH_EDITA_UBIC_DOCTOS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="VH_EDITA_FACT_POSTCOMPRA" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="VH_EDITA_DOCTOS_POSTCOMPRA" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CMP_CANCELA_COMPRAS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="VH_ELIMINA_DOCTOS_POSTCOMPRA" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="VH_ELIMINA_FACT_POSTCOMPRA" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="VH_NEW_FACT_POSTCOMPRA" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="VH_NEW_DOCTOS_POSTCOMPRA" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="[ASIG_ VINCUL_USU_CUENTAS]" Member="ASIG__VINCUL_USU_CUENTAS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="VH_INGRESA_GASTOS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="VH_INGRESA_TRASLADOVH" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="VH_ACCESO_FULL_MODULOS_MODIF" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Vehiculos" Member="Vehiculos">
+    <Type Name="Vehiculos">
+      <Column Name="IdVehiculo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="NumEconomico" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Marca" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Placas" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="IdTipoUnidad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="FoLicFed" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="PrecioUnidad" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="GastosAdicionales" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Utilidad" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="KmInicial" Type="System.String" DbType="VarChar(50)" CanBeNull="true" UpdateCheck="WhenChanged" />
+      <Column Name="KmActual" Type="System.String" DbType="VarChar(50)" CanBeNull="true" UpdateCheck="WhenChanged" />
+      <Column Name="IdSucursal" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="IdUsuarioRegistro" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="FechaAlta" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Disponible" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Unidad" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="CostoTotal" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(200)" CanBeNull="true" UpdateCheck="WhenChanged" />
+      <Column Name="PrecioRenta" Type="System.Decimal" DbType="Money" CanBeNull="true" UpdateCheck="WhenChanged" />
+      <Column Name="NoPlataforma" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Association Name="Vehiculos_VehiculosTipos" Member="VehiculosTipos" ThisKey="IdTipoUnidad" OtherKey="IdTipoUnidad" Type="VehiculosTipos" />
+      <Association Name="Vehiculos_Sucursales" Member="Sucursales" ThisKey="IdSucursal" OtherKey="IdSucursal" Type="Sucursales" />
+      <Association Name="Vehiculos_VehiculosMatricesTraslados" Member="VehiculosMatricesTraslados" ThisKey="IdVehiculo" OtherKey="IdVehiculo" Type="VehiculosMatricesTraslados" />
+      <Association Name="Vehiculos_Vendoc" Member="Vendoc" ThisKey="IdVehiculo" OtherKey="IdVehiculo" Type="Vendoc" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Clientes" Member="Clientes">
+    <Type Name="Clientes">
+      <Column Name="IdCliente" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="NombreCompleto" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Telefono1" Type="System.String" DbType="VarChar(20)" CanBeNull="true" UpdateCheck="WhenChanged" />
+      <Column Name="Telefono2" Type="System.String" DbType="VarChar(20)" CanBeNull="true" UpdateCheck="WhenChanged" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(20)" CanBeNull="true" UpdateCheck="WhenChanged" />
+      <Column Name="Direccion" Type="System.String" DbType="VarChar(500)" CanBeNull="true" UpdateCheck="WhenChanged" />
+      <Column Name="Saldo" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Activo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="ConteoRentas" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="IdSucursal" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="IdUsuarioRegistro" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="FechaAlta" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Association Name="Clientes_Vendoc" Member="Vendoc" ThisKey="IdCliente" OtherKey="IdCliente" Type="Vendoc" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VehiculosTipos" Member="VehiculosTipos">
+    <Type Name="VehiculosTipos">
+      <Column Name="IdTipoUnidad" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Vehiculos_VehiculosTipos" Member="Vehiculos" ThisKey="IdTipoUnidad" OtherKey="IdTipoUnidad" Type="Vehiculos" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Sucursales" Member="Sucursales">
+    <Type Name="Sucursales">
+      <Column Name="IdSucursal" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="DescripcionSucursal" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Direccion" Type="System.String" DbType="VarChar(500)" CanBeNull="true" UpdateCheck="WhenChanged" />
+      <Column Name="FolioVenta" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="WhenChanged" />
+      <Column Name="FolioPago" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="WhenChanged" />
+      <Column Name="Color" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Status" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Association Name="Vehiculos_Sucursales" Member="Vehiculos" ThisKey="IdSucursal" OtherKey="IdSucursal" Type="Vehiculos" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Gastos" Member="Gastos">
+    <Type Name="Gastos">
+      <Column Name="IdGasto" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="IdGastoTipo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(300) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Importe" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Fecha" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="IdVehiculo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Status" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="IdSucursal" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="IdUsuarioRegistro" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Association Name="Gastos_GastosTipos" Member="GastosTipos" ThisKey="IdGastoTipo" OtherKey="IdGastoTipo" Type="GastosTipos" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GastosTipos" Member="GastosTipos">
+    <Type Name="GastosTipos">
+      <Column Name="IdGastoTipo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(200)" CanBeNull="true" UpdateCheck="WhenChanged" />
+      <Association Name="Gastos_GastosTipos" Member="Gastos" ThisKey="IdGastoTipo" OtherKey="IdGastoTipo" Type="Gastos" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Localizaciones" Member="Localizaciones">
+    <Type Name="Localizaciones">
+      <Column Name="IdLocalizacion" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Status" Type="System.Char" DbType="Char(1)" CanBeNull="true" UpdateCheck="WhenChanged" />
+      <Association Name="Localizaciones_Vendoc" Member="Vendoc" ThisKey="IdLocalizacion" OtherKey="IdOrigen" Type="Vendoc" />
+      <Association Name="Localizaciones_Vendoc1" Member="Vendoc1" ThisKey="IdLocalizacion" OtherKey="IdDestino" Type="Vendoc" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VehiculosMatricesTraslados" Member="VehiculosMatricesTraslados">
+    <Type Name="VehiculosMatricesTraslados">
+      <Column Name="Ik" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="IdVehiculo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="IdOrigen" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="IdDestino" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Importe" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Status" Type="System.Char" DbType="Char(1)" CanBeNull="true" UpdateCheck="WhenChanged" />
+      <Association Name="Vehiculos_VehiculosMatricesTraslados" Member="Vehiculos" ThisKey="IdVehiculo" OtherKey="IdVehiculo" Type="Vehiculos" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vista_VhMatrizLocalizaciones" Member="vista_VhMatrizLocalizaciones">
+    <Type Name="vista_VhMatrizLocalizaciones">
+      <Column Name="Ik" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="IdVehiculo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="IdOrigen" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="IdDestino" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Importe" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Status" Type="System.Char" DbType="Char(1)" CanBeNull="true" UpdateCheck="WhenChanged" />
+      <Column Name="IdLocalizacion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="DescripcionOrigen" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="DescripcionDestino" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Parametros" Member="Parametros">
+    <Type Name="Parametros">
+      <Column Name="Ik" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Empresa" Type="System.String" DbType="VarChar(50)" CanBeNull="true" UpdateCheck="WhenChanged" />
+      <Column Name="PorcIva" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="RFC" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="DireccionEmpresa" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Vendoc" Member="Vendoc">
+    <Type Name="Vendoc">
+      <Column Name="Ik" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="IdVehiculo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="NumEconomico" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="IdOrigen" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="IdDestino" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="SubTotal" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Iva" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="ImporteTotal" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="TipoMovimiento" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="FechaInicio" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="FechaFinal" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="IdCliente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="IdMatrizVehiculo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="IdSucursalMov" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="IdUsuarioMov" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="IdExpediente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Fecha" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="ImporteBase" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="DiasRenta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="KilomentrajeVh" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="CostoActualVh" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="UtilidadRenta" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Status" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="KilomentrajeFinalVh" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="KmFinalAplicado" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="FechaCancelacion" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" UpdateCheck="WhenChanged" />
+      <Column Name="UsuarioCancelacion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" UpdateCheck="WhenChanged" />
+      <Column Name="DescripcionServicio" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="OperadorDescripcion" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Association Name="Vendoc_VendocDetalles" Member="VendocDetalles" ThisKey="Ik" OtherKey="IdVendoc" Type="VendocDetalles" />
+      <Association Name="Vendoc_VendocExpedientes" Member="VendocExpedientes" ThisKey="IdExpediente" OtherKey="IdExpediente" Type="VendocExpedientes" />
+      <Association Name="Vehiculos_Vendoc" Member="Vehiculos" ThisKey="IdVehiculo" OtherKey="IdVehiculo" Type="Vehiculos" IsForeignKey="true" />
+      <Association Name="Operadores_Vendoc" Member="Operadores" ThisKey="IdOperador" OtherKey="IdOperador" Type="Operadores" IsForeignKey="true" />
+      <Association Name="Clientes_Vendoc" Member="Clientes" ThisKey="IdCliente" OtherKey="IdCliente" Type="Clientes" IsForeignKey="true" />
+      <Association Name="Localizaciones_Vendoc" Member="Localizaciones" ThisKey="IdOrigen" OtherKey="IdLocalizacion" Type="Localizaciones" IsForeignKey="true" />
+      <Association Name="Localizaciones_Vendoc1" Member="Localizaciones1" ThisKey="IdDestino" OtherKey="IdLocalizacion" Type="Localizaciones" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VendocDetalles" Member="VendocDetalles">
+    <Type Name="VendocDetalles">
+      <Column Name="IdVendocDetalles" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="IdVendoc" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="NumLetra" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="FechaAsignada" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="SubTotal" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Iva" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="TotalLetra" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Aplicado" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="IdVehiculo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Status" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Association Name="Vendoc_VendocDetalles" Member="Vendoc" ThisKey="IdVendoc" OtherKey="Ik" Type="Vendoc" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VendocExpedientes" Member="VendocExpedientes">
+    <Type Name="VendocExpedientes">
+      <Column Name="IdExpediente" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Importe" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="Status" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Association Name="Vendoc_VendocExpedientes" Member="Vendoc" ThisKey="IdExpediente" OtherKey="IdExpediente" Type="Vendoc" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VehiculosKmRentasLog" Member="VehiculosKmRentasLog">
+    <Type Name="VehiculosKmRentasLog">
+      <Column Name="Ik" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="IdVehiculo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" UpdateCheck="WhenChanged" />
+      <Column Name="KmInicialRenta" Type="System.String" DbType="VarChar(50)" CanBeNull="true" UpdateCheck="WhenChanged" />
+      <Column Name="KmFinalRenta" Type="System.String" DbType="VarChar(50)" CanBeNull="true" UpdateCheck="WhenChanged" />
+      <Column Name="IdVendoc" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="WhenChanged" />
+      <Column Name="Status" Type="System.Char" DbType="Char(1)" CanBeNull="true" UpdateCheck="WhenChanged" />
+      <Column Name="IdExpediente" Type="System.Int32" DbType="Int" CanBeNull="true" UpdateCheck="WhenChanged" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Operadores" Member="Operadores">
+    <Type Name="Operadores">
+      <Column Name="IdOperador" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Operadores_Vendoc" Member="Vendoc" ThisKey="IdOperador" OtherKey="IdOperador" Type="Vendoc" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,16 @@
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\obj\Debug\TransControl.Reportes.repMaster.resources
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\obj\Debug\TransControl.Reportes.repRentacotizacion.resources
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\obj\Debug\TransControl.csproj.GenerateResource.Cache
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\obj\Debug\TransControl.dll.licenses
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\bin\TransControl.dll
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\bin\TransControl.pdb
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\bin\Alpha.Db.SQLGeneratorPlus.dll
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\bin\Infovision.Security.Permissions.dll
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\bin\System.Linq.Dynamic.dll
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\bin\FluentValidationNA.dll
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\bin\System.Linq.Dynamic.xml
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\bin\FluentValidationNA.xml
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\obj\Debug\TransControl.dll
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\obj\Debug\TransControl.pdb
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\obj\Debug\TransControl.csprojResolveAssemblyReference.cache
+C:\Users\Pablo Ramos\Documents\AQM\TransControl\TransControl\obj\Debug\TransControl.Reportes.repRentas.resources

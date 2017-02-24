@@ -1,0 +1,159 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Root.master.cs" Inherits="TransControl.RootMaster" %>
+
+<%-- DXCOMMENT: Page Root.master is a master page that contains the root layout (it includes Header, Cental Area, and Footer) --%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="Content/Site.css" />
+    <link rel="stylesheet" type="text/css" href="Content/MySite.css" />
+<script type="text/javascript">
+    function OnReturnClose()
+    {
+        PopShowSucursal.Hide();
+        window.location.reload();
+    }
+
+</script>
+</head>
+<body runat="server" id="Body">
+    <form id="form1" runat="server">
+    <dx:ASPxSplitter ID="ASPxSplitter1" runat="server" AllowResize="true" Orientation="Vertical"
+        FullscreenMode="false" SeparatorVisible="False" Height="3800px" Width="99%">
+        <Styles>
+            <Pane>
+                <Paddings Padding="0px" />
+                <Border BorderWidth="0px" />
+            </Pane>
+        </Styles>
+        <Panes>
+            <dx:SplitterPane Name="Header" Size="83px" MinSize="83px">
+                <PaneStyle CssClass="headerPane">
+                    <BorderBottom BorderWidth="1px" />
+                </PaneStyle>
+                <ContentCollection>
+                    <dx:SplitterContentControl ID="SplitterContentControl1" runat="server">
+                        <div class="headerTop">
+                            <div id="container">
+                                <div class="izquierda">
+                                    <div id="logomain" class="logo"></div>
+                                </div>
+                                <div id="divempresa" runat="server" class="aztitulo1 izquierda"> Autos Juarez de Tabasco </div>
+                                <div id="bloque izquieda">
+                                    
+                                                <div class="azblock">
+                                                     <dx:ASPxHyperLink ID="linkSalir" runat="server" Text="Salir" NavigateUrl="/loginusuario/logout.aspx">
+                                                    </dx:ASPxHyperLink>
+                                                </div>
+                                                 <div class="azblock">
+                                                        <dx:ASPxLabel ID="lblLogin" runat="server" Text="ASPxLabel">
+                                                        </dx:ASPxLabel>
+                                                </div>
+                                                <div class="azblock">
+                                                     <dx:ASPxHyperLink ID="popx"  runat="server" Text="Click para seleccionar">
+                                                     </dx:ASPxHyperLink>
+                                                </div>
+                                </div>
+                                </div>
+                        </div>
+                        <div class="headerMenu">
+                            <%-- DXCOMMENT: Configure the header menu --%>
+<dx:ASPxMenu ID="ASPxMenu1" runat="server" RenderMode="Lightweight" Width="100%"
+    DataSourceID="XmlDataSourceHeader">
+    <Border BorderWidth="0px" />
+    <BorderTop BorderWidth="1px" />
+</dx:ASPxMenu>
+
+
+                            <dx:ASPxPopupControl ID="PopShowSucursal" ShowCloseButton="false" runat="server"  PopupElementID="popx" ClientInstanceName="PopShowSucursal" HeaderText="Seleccionar Sucursal" Modal="True" CloseAction="CloseButton" PopupHorizontalAlign="WindowCenter" PopupVerticalAlign="WindowCenter">
+                                <ContentCollection>
+                                    <dx:PopupControlContentControl runat="server" SupportsDisabledAttribute="True">
+                                        <%--<dx:ASPxCallbackPanel ID="cbSucursal" runat="server" ClientInstanceName="cbSucursal" OnCallback="cbSucursal_Callback"  Width="200px">                    --%>                    
+                                        <dx:ASPxCallbackPanel ID="cbSucursal" runat="server" ClientInstanceName="cbSucursal" OnCallback="cbSucursal_Callback" Width="200px">
+                                            <ClientSideEvents EndCallback="function(s, e) {
+	OnReturnClose();
+}" />
+                                            <PanelCollection>
+                                                <dx:PanelContent runat="server" SupportsDisabledAttribute="True">
+                                                    <dx:ASPxComboBox ID="cmbSucursal" runat="server" AutoPostBack="false" ClientInstanceName="cmbSucursal" DataSourceID="ldsSucursales" TextField="DescripcionSucursal" TextFormatString="{1}" ValueField="IdSucursal" ValueType="System.Int32">
+                                                        <Columns>
+                                                            <dx:ListBoxColumn FieldName="IdSucursal" />
+                                                            <dx:ListBoxColumn FieldName="DescripcionSucursal" />
+                                                        </Columns>
+                                                    </dx:ASPxComboBox>
+                                                    
+                                                    
+                                                </dx:PanelContent>
+                                            </PanelCollection>
+                                        </dx:ASPxCallbackPanel>
+                                        &nbsp;
+                                        <dx:ASPxButton ID="btnAceptar" runat="server" AutoPostBack="false"  Text="Aplicar">
+                                                      <ClientSideEvents Click="function(s,e)
+                                                          {
+                                                         
+
+                                                         /* var idsucursal = cmbSucursal.GetValue();
+                                                          var textsucursal = cmbSucursal.GetText();
+                                                           var datos = new Array(idsucursal,textsucursal);*/
+
+                                                          cbSucursal.PerformCallback();
+                                                            
+                                                          }" />
+                                                        <Image IconID="actions_apply_16x16">
+                                                        </Image>
+                                       </dx:ASPxButton>
+                                        <%--<dx:ASPxButton ID="btnCancelar" runat="server" Text="Cerrar">
+                                                        <ClientSideEvents Click="function(s, e) {
+	            PopShowSucursal.Hide();
+                    }" />
+                                                        <Image IconID="actions_cancel_16x16">
+                                                        </Image>
+                                       </dx:ASPxButton>--%>
+                                    </dx:PopupControlContentControl>
+                                </ContentCollection>
+                            </dx:ASPxPopupControl>
+
+
+                        </div>
+                        
+
+                    </dx:SplitterContentControl>
+                </ContentCollection>
+            </dx:SplitterPane>
+            <dx:SplitterPane Name="Content" MinSize="375px" >
+				<PaneStyle CssClass="mainContentPane">
+<BorderBottom BorderWidth="1px"></BorderBottom>
+                </PaneStyle>
+                <ContentCollection>
+                    <dx:SplitterContentControl ID="SplitterContentControl3" runat="server"  SupportsDisabledAttribute="True">
+                        <asp:ContentPlaceHolder ID="Content" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </dx:SplitterContentControl>
+                </ContentCollection>
+                <PaneStyle BackColor="gray">
+                    <BorderBottom BorderWidth="1px" />
+                </PaneStyle>
+            </dx:SplitterPane>
+
+            
+        </Panes>
+    </dx:ASPxSplitter>
+	
+<%-- DXCOMMENT: Configure the header menu --%>
+<asp:XmlDataSource ID="XmlDataSourceHeader" runat="server" DataFile="~/App_Data/TopMenu.xml"
+    XPath="/items/*"></asp:XmlDataSource>
+
+	
+             
+
+
+        <asp:LinqDataSource ID="ldsSucursales" runat="server"  ContextTypeName="TransControl.TransControlDataContext"  EnableDelete="True" EnableInsert="True" EnableUpdate="True" EntityTypeName="" TableName="Sucursales" Where="Status == @Status">
+         <WhereParameters>
+            <asp:Parameter DefaultValue="A" Name="Status" Type="Char" />
+        </WhereParameters>
+        </asp:LinqDataSource>
+
+
+    </form>
+</body>
+</html>

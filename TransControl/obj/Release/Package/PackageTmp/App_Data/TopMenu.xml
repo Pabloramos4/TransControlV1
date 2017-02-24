@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <item Text="Asistente de Rentas" NavigateUrl="./operaciones/AsistRentas.aspx" />
+  <item Text="Unidades" NavigateUrl="./principal/VehiculosView.aspx"  />
+  <item Text="Clientes" NavigateUrl="./principal/ClientesView.aspx"  />
+
+</items>
